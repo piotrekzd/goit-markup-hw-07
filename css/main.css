@@ -151,16 +151,6 @@ p {
   color: var(--blue-color);
 }
 
-.navigation__link:after {
-  content: "";
-  margin-top: 28px;
-  display: block;
-  background-color: var(--blue-color);
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-}
-
 .navigation__link--active:after {
   content: "";
   margin-top: 28px;
@@ -169,6 +159,7 @@ p {
   width: 100%;
   height: 4px;
   border-radius: 2px;
+  z-index: 2;
 }
 
 .contact {
@@ -457,7 +448,7 @@ p {
 
 .footer-newsletter {
   margin-top: 72px;
-  margin-left: 90px;
+  margin-left: 77px;
 }
 
 .footer-address {
@@ -580,7 +571,7 @@ p {
   width: 200px;
   height: 50px;
   margin-left: 12px;
-  padding-left: 42px;
+  padding-left: 16px;
 }
 
 .newsletter-btn__icon {
