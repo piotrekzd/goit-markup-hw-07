@@ -262,8 +262,12 @@ p {
 }
 
 .lorem__list {
-  display: inline-flex;
+  display: flex;
   list-style: none;
+}
+
+.lorem__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .lorem__heading {
@@ -299,10 +303,9 @@ p {
 }
 
 .about-us__list {
-  margin-left: -30px;
   margin-top: 50px;
-  justify-content: space-evenly;
   display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -315,7 +318,6 @@ p {
 
 .about-us__item {
   display: inline-flex;
-  flex-basis: calc(100%/3-30px);
 }
 
 .thumb {
@@ -349,14 +351,9 @@ p {
 }
 
 .team__list {
-  margin-left: -30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style: none;
-}
-
-.team__item {
-  flex-basis: calc(100%/4-30px);
 }
 
 .team__name {
@@ -423,9 +420,8 @@ p {
 }
 
 .clients__list {
-  margin-left: -30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style: none;
 }
 

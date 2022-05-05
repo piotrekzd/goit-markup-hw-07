@@ -1,6 +1,13 @@
 .lorem__list {
-    display: inline-flex;
+    display: flex;
     list-style: none;
+}
+
+.lorem__item {
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .lorem__heading {

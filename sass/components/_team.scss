@@ -11,14 +11,9 @@
 }
 
 .team__list {
-    margin-left: -30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none;
-}
-
-.team__item {
-    flex-basis: calc(100%/4-30px);
 }
 
 .team__name {
