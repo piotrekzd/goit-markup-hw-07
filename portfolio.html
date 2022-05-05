@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl">
-  
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/testowy.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,28 +19,32 @@
 
   <body>
     <header class="page-header">
-      <div class="container">
-        <nav class="nav">
-          <a href="./index.html" class="logo"> <span class="logo__text">Web</span>Studio</a>
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link">Agencja</a>
+      <div class="container page-header__container">
+        <a href="./index.html" class="logo logo__header">
+          <span class="logo__header--text">Web</span>Studio</a
+        >
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link navigation__link--active">Agencja</a>
             </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link">Portfolio</a>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link navigation__link--active"
+                >Portfolio</a
+              >
             </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Kontakt</a>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigation__link--active">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <a href="mailto:info@devstudio.com" class="contact link">
+        <a href="mailto:info@devstudio.com" class="contact contact--mail">
           <svg class="contact__icon" width="16" height="12">
             <use href="./images/icons.svg#envelope"></use>
           </svg>
           info@devstudio.com
         </a>
-        <a href="tel:+48111111111" class="contact link">
+        <a href="tel:+48111111111" class="contact contact--tel">
           <svg class="contact__icon" width="10" height="16">
             <use href="./images/icons.svg#smartphone"></use>
           </svg>
@@ -51,7 +54,7 @@
     </header>
 
     <main>
-      <section class="section">
+      <section class="section btn-section">
         <div class="container">
           <ul class="btn-list">
             <li class="btn-list__item">
@@ -73,7 +76,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section grid-section">
         <div class="container">
           <ul class="grid">
             <li class="grid__item">
@@ -244,10 +247,12 @@
     </main>
 
     <footer class="page-footer">
-      <section class="section">
-        <div class="container">
+      <section class="section page-footer__section">
+        <div class="page-footer__container container">
           <div class="footer-address">
-            <a href="./index.html" class="logo">Web<span class="logo__footer">Studio</span></a>
+            <a href="./index.html" class="logo logo__footer"
+              >Web<span class="logo__footer--text">Studio</span></a
+            >
             <address class="address">
               <ul class="address__list">
                 <li class="address__item">
@@ -303,13 +308,13 @@
           </div>
           <div class="footer-newsletter">
             <h5 class="newsletter__heading">zapisz się do newslettera</h5>
-            <form class="newsletter" name="newsletter" autocomplete="off">
+            <form class="newsletter" name="newsletter" autocomplete="off" novalidate>
               <label class="newsletter__label">
                 <input
-                  class="newsletter__input"
                   type="email"
                   name="newsletter_email"
                   placeholder="E-mail"
+                  class="newsletter__input"
                 />
               </label>
               <button class="newsletter-btn button" type="submit">
