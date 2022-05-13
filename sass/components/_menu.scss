@@ -35,7 +35,7 @@
         color: var(--blue-color);
     }
 
-    &--active:after {
+    &--active::after {
         content: "";
         margin-top: 28px;
         display: block;
